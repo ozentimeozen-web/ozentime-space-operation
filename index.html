@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Ozentime Space Operation | Vulture Satellite</title>
+  <title>Ozentime Space Operation | VULTURE Satellite</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -15,110 +15,53 @@
       --ink: #0f172a;
       --muted: #64748b;
       --line: #e2e8f0;
-      --bg: #f8fafc;
     }
     * { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      font-family: Inter, "Segoe UI", sans-serif;
-      background: #f4f7fb;
-      color: var(--ink);
-      line-height: 1.55;
-    }
+    body { font-family: Inter, "Segoe UI", sans-serif; background: #f4f7fb; color: var(--ink); line-height: 1.6; }
     a { color: inherit; text-decoration: none; }
-    header {
-      position: sticky; top: 0; z-index: 20;
-      background: rgba(255,255,255,0.92);
-      backdrop-filter: blur(12px);
-      border-bottom: 1px solid rgba(226,232,240,0.8);
-    }
-    .nav {
-      max-width: 1120px; margin: 0 auto; padding: 16px 24px;
-      display: flex; align-items: center; justify-content: space-between;
-    }
+    header { position: sticky; top: 0; z-index: 20; background: rgba(255,255,255,0.92); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(226,232,240,0.8); }
+    .nav { max-width: 1120px; margin: 0 auto; padding: 16px 24px; display: flex; align-items: center; justify-content: space-between; }
     .logo { display: flex; align-items: center; gap: 8px; font-weight: 700; font-size: 18px; }
-    .logo .mark {
-      width: 28px; height: 28px; border-radius: 8px;
-      background: linear-gradient(135deg, var(--blue), var(--cyan));
-      color: #fff; display: grid; place-items: center; font-size: 14px;
-    }
+    .logo .mark { width: 28px; height: 28px; border-radius: 8px; background: linear-gradient(135deg, var(--blue), var(--cyan)); color: #fff; display: grid; place-items: center; font-size: 14px; }
     nav { display: flex; align-items: center; gap: 28px; color: #334155; font-weight: 500; font-size: 15px; }
-    .btn {
-      display: inline-flex; align-items: center; gap: 8px;
-      background: var(--blue); color: #fff; font-weight: 600;
-      border-radius: 10px; padding: 12px 18px; border: 0;
-    }
+    .btn { display: inline-flex; align-items: center; gap: 8px; background: var(--blue); color: #fff; font-weight: 600; border-radius: 10px; padding: 12px 18px; border: 0; cursor: pointer; }
     .btn:hover { background: var(--blue-dark); }
     .btn.ghost { background: #fff; color: var(--ink); border: 1px solid var(--line); }
     .wrap { max-width: 1120px; margin: 0 auto; padding: 0 24px; }
-    .hero {
-      padding: 80px 0 50px;
-      display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 40px; align-items: center;
-    }
-    .pill {
-      display: inline-flex; align-items: center; gap: 8px;
-      background: #e0f2fe; color: #0369a1; border-radius: 999px;
-      padding: 6px 12px; font-size: 13px; font-weight: 600; margin-bottom: 18px;
-    }
-    h1 { font-size: 52px; line-height: 1.05; letter-spacing: -1.1px; margin-bottom: 16px; }
+    .hero { padding: 72px 0 40px; display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 40px; align-items: center; }
+    .pill { display: inline-flex; align-items: center; gap: 8px; background: #e0f2fe; color: #0369a1; border-radius: 999px; padding: 6px 12px; font-size: 13px; font-weight: 600; margin-bottom: 18px; }
+    h1 { font-size: 48px; line-height: 1.05; letter-spacing: -1px; margin-bottom: 16px; }
     h1 span { color: var(--blue); display: block; }
-    .lead { color: var(--muted); font-size: 18px; max-width: 520px; margin-bottom: 24px; }
+    .lead { color: var(--muted); font-size: 18px; max-width: 540px; margin-bottom: 24px; }
     .cta { display: flex; gap: 12px; margin-bottom: 18px; flex-wrap: wrap; }
-    .sat-card {
-      background: #fff; border-radius: 22px; padding: 28px;
-      box-shadow: 0 30px 80px rgba(29,78,216,0.12);
-      border: 1px solid var(--line);
-    }
-    .sat-visual {
-      height: 220px; border-radius: 16px; margin-bottom: 18px;
-      background: radial-gradient(circle at 40% 40%, #1e3a8a, #0f172a 70%);
-      display: grid; place-items: center; position: relative; overflow: hidden;
-    }
-    .sat-visual::before {
-      content: "";
-      position: absolute; width: 180px; height: 180px; border-radius: 50%;
-      border: 2px dashed rgba(56,189,248,0.4);
-    }
-    .sat-body {
-      width: 70px; height: 50px; background: #e2e8f0; border-radius: 6px;
-      position: relative; z-index: 1;
-    }
-    .sat-body::before, .sat-body::after {
-      content: ""; position: absolute; top: 8px; width: 80px; height: 34px;
-      background: linear-gradient(90deg, #38bdf8, #1d4ed8); border-radius: 2px;
-    }
-    .sat-body::before { left: -84px; }
-    .sat-body::after { right: -84px; }
-    .section { padding: 70px 0; }
+    .sat-card { background: #fff; border-radius: 22px; padding: 24px; box-shadow: 0 30px 80px rgba(29,78,216,0.12); border: 1px solid var(--line); cursor: pointer; transition: transform 0.2s; }
+    .sat-card:hover { transform: translateY(-4px); }
+    .sat-visual { height: 200px; border-radius: 16px; margin-bottom: 16px; background: radial-gradient(circle at 40% 40%, #1e3a8a, #0f172a 70%); display: grid; place-items: center; position: relative; overflow: hidden; }
+    .sat-visual::before { content: ""; position: absolute; width: 160px; height: 160px; border-radius: 50%; border: 2px dashed rgba(56,189,248,0.4); }
+    .sat-body { width: 64px; height: 46px; background: #e2e8f0; border-radius: 6px; position: relative; z-index: 1; }
+    .sat-body::before, .sat-body::after { content: ""; position: absolute; top: 7px; width: 72px; height: 32px; background: linear-gradient(90deg, #38bdf8, #1d4ed8); border-radius: 2px; }
+    .sat-body::before { left: -76px; } .sat-body::after { right: -76px; }
+    .section { padding: 60px 0; }
     .kicker { color: var(--blue); font-size: 12px; letter-spacing: 1.4px; font-weight: 700; margin-bottom: 10px; text-align: center; }
-    h2 { font-size: 38px; letter-spacing: -0.6px; margin-bottom: 10px; text-align: center; }
-    .sub { color: var(--muted); margin-bottom: 32px; text-align: center; }
+    h2 { font-size: 36px; letter-spacing: -0.5px; margin-bottom: 10px; text-align: center; }
+    .sub { color: var(--muted); margin-bottom: 28px; text-align: center; }
     .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
-    .card {
-      background: #fff; border: 1px solid var(--line); border-radius: 18px; padding: 22px;
-      box-shadow: 0 8px 24px rgba(15,23,42,0.04);
-    }
-    .icon {
-      width: 36px; height: 36px; border-radius: 10px; display: grid; place-items: center;
-      background: #e0f2fe; color: var(--blue); margin-bottom: 14px; font-weight: 800;
-    }
-    .card h3 { margin-bottom: 6px; }
-    .specs { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 16px; }
-    .spec { background: #f8fafc; border-radius: 10px; padding: 12px; font-size: 14px; }
+    .card { background: #fff; border: 1px solid var(--line); border-radius: 18px; padding: 22px; box-shadow: 0 8px 24px rgba(15,23,42,0.04); }
+    .icon { width: 36px; height: 36px; border-radius: 10px; display: grid; place-items: center; background: #e0f2fe; color: var(--blue); margin-bottom: 12px; font-weight: 800; }
+    .specs { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 14px; }
+    .spec { background: #f8fafc; border-radius: 10px; padding: 10px; font-size: 13px; }
     .spec strong { display: block; color: var(--ink); }
-    footer {
-      margin-top: 40px; background: #fff; border-top: 1px solid var(--line);
-      padding: 22px 0 40px;
-    }
-    .foot {
-      display: flex; justify-content: space-between; align-items: center; gap: 12px;
-      color: var(--muted); font-size: 14px; flex-wrap: wrap;
-    }
-    @media (max-width: 900px) {
-      .hero, .grid { grid-template-columns: 1fr; }
-      h1 { font-size: 38px; }
-      nav .hide { display: none; }
-      .specs { grid-template-columns: 1fr; }
-    }
+    .brief { display: none; background: #fff; border: 1px solid var(--line); border-radius: 18px; padding: 28px; margin-top: 20px; }
+    .brief.open { display: block; }
+    .brief h3 { margin: 18px 0 8px; font-size: 20px; }
+    .brief p, .brief li { margin-bottom: 8px; color: #334155; }
+    .brief ul { padding-left: 20px; margin-bottom: 12px; }
+    .status { background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 12px; padding: 14px; margin: 16px 0; }
+    .phase { display: flex; gap: 12px; margin-bottom: 10px; align-items: flex-start; }
+    .phase-num { width: 28px; height: 28px; border-radius: 50%; background: var(--blue); color: #fff; display: grid; place-items: center; font-size: 13px; font-weight: 700; flex-shrink: 0; }
+    footer { margin-top: 40px; background: #fff; border-top: 1px solid var(--line); padding: 22px 0 36px; }
+    .foot { display: flex; justify-content: space-between; align-items: center; gap: 12px; color: var(--muted); font-size: 14px; flex-wrap: wrap; }
+    @media (max-width: 900px) { .hero, .grid { grid-template-columns: 1fr; } h1 { font-size: 36px; } nav .hide { display: none; } .specs { grid-template-columns: 1fr; } }
   </style>
 </head>
 <body>
@@ -128,7 +71,7 @@
       <nav>
         <a class="hide" href="#vulture">Vulture</a>
         <a class="hide" href="#ops">Operations</a>
-        <a class="hide" href="#about">About</a>
+        <a class="hide" href="#status">Status</a>
         <a class="btn" href="#vulture">View satellite</a>
       </nav>
     </div>
@@ -138,89 +81,139 @@
     <section class="hero">
       <div>
         <div class="pill">◎ Ozentime Space Operation</div>
-        <h1>Watching Earth<span>from orbit.</span></h1>
-        <p class="lead">Ozentime Space Operation runs the Vulture satellite and supporting ground systems for observation, tracking, and data collection.</p>
+        <h1>VULTURE<span>Autonomous Sensing & Tracking Satellite</span></h1>
+        <p class="lead">An experimental satellite project aimed at developing and eventually deploying an autonomous sensing and tracking platform in space. The immediate ambition is straightforward: reach space.</p>
         <div class="cta">
-          <a class="btn" href="#vulture">Meet Vulture →</a>
+          <button class="btn" id="openBrief">Full mission brief →</button>
           <a class="btn ghost" href="#ops">See operations</a>
         </div>
       </div>
-      <div class="sat-card">
+      <div class="sat-card" id="satCard">
         <div class="sat-visual"><div class="sat-body"></div></div>
-        <h3>Vulture Satellite</h3>
-        <p style="color:#64748b;margin-top:6px;">Primary observation platform. Designed for persistent Earth monitoring from low Earth orbit.</p>
+        <h3>VULTURE</h3>
+        <p style="color:#64748b;margin:6px 0 0;font-size:14px;">Autonomous Sensing & Tracking Satellite Demonstrator</p>
         <div class="specs">
-          <div class="spec"><strong>Orbit</strong> Low Earth Orbit</div>
-          <div class="spec"><strong>Role</strong> Observation & tracking</div>
-          <div class="spec"><strong>Status</strong> In development</div>
-          <div class="spec"><strong>Operator</strong> Ozentime Space</div>
+          <div class="spec"><strong>Type</strong> Experimental demonstrator</div>
+          <div class="spec"><strong>Orbit goal</strong> Low Earth Orbit</div>
+          <div class="spec"><strong>Focus</strong> Sensing & tracking</div>
+          <div class="spec"><strong>Status</strong> Early prototype</div>
         </div>
+        <p style="margin-top:12px;font-size:13px;color:#1d4ed8;font-weight:600;">Click for full brief</p>
       </div>
     </section>
 
     <section class="section" id="vulture">
-      <div class="kicker">PRIMARY ASSET</div>
-      <h2>The Vulture satellite</h2>
-      <p class="sub">A dedicated platform for continuous Earth observation and situational awareness.</p>
+      <div class="kicker">MISSION OVERVIEW</div>
+      <h2>What VULTURE is</h2>
+      <p class="sub">A small satellite designed to operate independently, observe its surroundings, process information onboard, make basic autonomous decisions, and communicate selected information back to Earth.</p>
       <div class="grid">
-        <article class="card">
-          <div class="icon">◎</div>
-          <h3>Wide-area coverage</h3>
-          <p>Repeated passes over regions of interest for consistent monitoring.</p>
-        </article>
-        <article class="card">
-          <div class="icon">📡</div>
-          <h3>Data downlink</h3>
-          <p>Collected imagery and telemetry sent to ground stations for processing.</p>
-        </article>
-        <article class="card">
-          <div class="icon">⚡</div>
-          <h3>Efficient design</h3>
-          <p>Built for long-duration operations with reliable power and pointing systems.</p>
-        </article>
+        <article class="card"><div class="icon">◎</div><h3>Reach space</h3><p>The project's first ambition is deliberately straightforward: get a working demonstrator into space through gradual prototyping and iteration.</p></article>
+        <article class="card"><div class="icon">👁</div><h3>Sense & track</h3><p>Acquire visual information, interpret observations onboard, and perform mission-defined tracking tasks within its capability.</p></article>
+        <article class="card"><div class="icon">🧠</div><h3>Onboard intelligence</h3><p>Process observations locally, execute programmed mission logic, and reduce dependence on continuous ground control.</p></article>
       </div>
     </section>
 
     <section class="section" id="ops">
-      <div class="kicker">GROUND & SPACE</div>
-      <h2>Supporting operations</h2>
-      <p class="sub">Everything that keeps Vulture working and the data useful.</p>
+      <div class="kicker">OPERATIONS</div>
+      <h2>How the mission works</h2>
+      <p class="sub">From autonomous startup to ground contact. Click the satellite card or the button above for the complete brief.</p>
       <div class="grid">
-        <article class="card">
-          <div class="icon">🛰</div>
-          <h3>Mission control</h3>
-          <p>Command, health monitoring, and orbit maintenance from the ground.</p>
-        </article>
-        <article class="card">
-          <div class="icon">🌍</div>
-          <h3>Ground stations</h3>
-          <p>Receiving sites for telemetry, imagery, and status updates.</p>
-        </article>
-        <article class="card">
-          <div class="icon">📊</div>
-          <h3>Data products</h3>
-          <p>Processed outputs for analysis, mapping, and situational reports.</p>
-        </article>
+        <article class="card"><div class="icon">⚡</div><h3>Autonomous operation</h3><p>Startup, sensing, processing, tracking, health monitoring, and fault-aware recovery without constant human intervention.</p></article>
+        <article class="card"><div class="icon">📡</div><h3>Ground station</h3><p>Receives telemetry and selected data. Sends authorised commands. Reviews logs and supports troubleshooting.</p></article>
+        <article class="card"><div class="icon">🔄</div><h3>Development path</h3><p>Concept → prototype → testing → electronics validation → integration → space readiness. Each stage produces evidence.</p></article>
       </div>
     </section>
 
-    <section class="section" id="about">
-      <div class="kicker">ABOUT</div>
-      <h2>Ozentime Space Operation</h2>
-      <p class="sub">Part of the Ozentime family. Focused on satellite observation and related space systems.</p>
-      <div class="card" style="max-width:720px;margin:0 auto;text-align:center;">
-        <p>Vulture is the flagship satellite of Ozentime Space Operation. Additional systems, ground support, and future platforms will be added as the program grows.</p>
-        <p style="margin-top:12px;color:#64748b;">Contact: <a href="mailto:ozentimeozen@gmail.com" style="color:#1d4ed8;">ozentimeozen@gmail.com</a></p>
+    <section class="section" id="status">
+      <div class="kicker">CURRENT STATUS</div>
+      <h2>Early prototype stage</h2>
+      <div class="status" style="max-width:720px;margin:0 auto;">
+        <strong>Current milestone:</strong> Initial firmware baseline repeatability — 10 successful runs recorded.<br>
+        Initial firmware testing has demonstrated repeated boot sequences and camera frame acquisition on the bench. The physical prototype is undergoing progressive development, with further tests planned.
       </div>
+      <p class="sub" style="margin-top:16px;">Team of four participants. Development stages are not a claim that later phases have been completed.</p>
     </section>
+
+    <div class="brief" id="brief">
+      <h2 style="text-align:left;margin-bottom:6px;">VULTURE — Full Mission Brief</h2>
+      <p style="color:#64748b;margin-bottom:16px;">Autonomous Sensing & Tracking Satellite Demonstrator</p>
+
+      <h3>1. Mission objective</h3>
+      <p>The primary objective is to develop and demonstrate a satellite capable of:</p>
+      <ul>
+        <li>Reaching space and operating in a space environment.</li>
+        <li>Autonomous observation and sensing.</li>
+        <li>Identifying and tracking objects or visual targets within its observation capability.</li>
+        <li>Performing onboard processing rather than relying entirely on Earth-based processing.</li>
+        <li>Operating through programmed mission logic and autonomous decisions.</li>
+        <li>Sending telemetry, status reports and selected mission information to a ground station.</li>
+        <li>Demonstrating a progression from a conceptual prototype to an actual space-based experiment.</li>
+      </ul>
+
+      <h3>2. Mission philosophy</h3>
+      <p><strong>Build small. Test honestly. Learn continuously. Reach space.</strong></p>
+      <p>The project does not pretend that a prototype is already a flight-ready spacecraft. Every stage is intended to produce practical evidence, lessons and improvements. The team will progress through design, prototype construction, testing, validation and future launch preparation.</p>
+
+      <h3>3. Autonomous operation</h3>
+      <p>The satellite is intended to perform selected operations without constant human intervention. Operational logic will progressively support:</p>
+      <ul>
+        <li>Autonomous startup and operational states.</li>
+        <li>Observation and sensing.</li>
+        <li>Processing acquired information.</li>
+        <li>Mission-defined tracking functions.</li>
+        <li>Decision-making according to programmed rules.</li>
+        <li>System health monitoring.</li>
+        <li>Fault-aware operation and recovery.</li>
+        <li>Communication of selected information to Earth.</li>
+      </ul>
+      <p>The degree of autonomy will evolve as the project develops and is validated.</p>
+
+      <h3>4. Observation and tracking</h3>
+      <p>VULTURE is conceived as a sensing and tracking demonstrator. Its observation capability is intended to explore how a satellite can acquire visual information, interpret observations onboard and perform mission-defined tracking tasks. The project will progressively investigate limitations and capabilities of its observation system, including accuracy, processing capability, environmental conditions and operational reliability. Exact tracking targets and performance capabilities remain subjects of future development and testing.</p>
+
+      <h3>5. Onboard intelligence</h3>
+      <p>Instead of treating the satellite merely as a remotely controlled device, the project intends to investigate how it can process observations locally, execute predefined mission logic, respond to operational conditions, monitor its own system state, prioritise selected information, and reduce unnecessary dependence on continuous human intervention. This is an evolving experimental capability, not a claim of advanced AI already operating onboard.</p>
+
+      <h3>6. Communication and ground station</h3>
+      <p>The ground station will serve as the satellite's connection to Earth. Planned interaction focuses on receiving telemetry, monitoring mission health, receiving selected observation data, sending authorised commands, reviewing mission logs, and supporting troubleshooting. VULTURE is not a broadband communications satellite. Its communication capability supports sensing, monitoring and mission operations.</p>
+
+      <h3>7. Development journey</h3>
+      <div class="phase"><div class="phase-num">1</div><div><strong>Concept & design</strong><br>Establish the mission concept, objectives and initial design assumptions.</div></div>
+      <div class="phase"><div class="phase-num">2</div><div><strong>Prototype construction</strong><br>Develop the physical prototype and explore the satellite's structural design.</div></div>
+      <div class="phase"><div class="phase-num">3</div><div><strong>Prototype testing</strong><br>Perform initial structural tests, including planned drop, vibration and sound testing.</div></div>
+      <div class="phase"><div class="phase-num">4</div><div><strong>Electronics & firmware validation</strong><br>Progressively validate the onboard computing, sensing, software and operational behaviour.</div></div>
+      <div class="phase"><div class="phase-num">5</div><div><strong>Mission simulation & integration</strong><br>Integrate subsystems and test mission workflows under controlled conditions.</div></div>
+      <div class="phase"><div class="phase-num">6</div><div><strong>Space readiness</strong><br>Investigate the requirements, validation, partnerships and launch pathways necessary for a future space mission.</div></div>
+      <p style="font-size:13px;color:#64748b;margin-top:8px;">These are development stages, not a claim that any stage beyond current prototype testing has been completed.</p>
+
+      <h3>8. Current status</h3>
+      <div class="status">
+        VULTURE is currently in its early prototype and development stage. The project has begun initial firmware testing, successfully demonstrating repeated boot sequences and camera frame acquisition in its current bench setup. The team is now progressing toward structured testing of the physical prototype.<br><br>
+        <strong>Current milestone:</strong> Initial firmware baseline repeatability — 10 successful runs recorded.<br>
+        The physical prototype is undergoing progressive development, with further tests planned before advancing toward more integrated hardware testing.
+      </div>
+
+      <h3>9. The team</h3>
+      <p>VULTURE is currently being developed by a team of four participants, bringing together practical experience, experimentation, engineering interest and collaborative problem-solving.</p>
+    </div>
   </main>
 
   <footer>
     <div class="wrap foot">
       <a class="logo" href="#top"><span class="mark">◎</span> Ozentime Space</a>
-      <span>Observation from orbit.</span>
-      <span>© 2026 Ozentime Space Operation. All rights reserved.</span>
+      <span>VULTURE — Autonomous Sensing & Tracking Satellite Demonstrator</span>
+      <span>© 2026 Ozentime Space Operation</span>
     </div>
   </footer>
+
+  <script>
+    const brief = document.getElementById("brief");
+    function toggleBrief() {
+      brief.classList.toggle("open");
+      if (brief.classList.contains("open")) brief.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+    document.getElementById("openBrief").addEventListener("click", toggleBrief);
+    document.getElementById("satCard").addEventListener("click", toggleBrief);
+  </script>
 </body>
 </html>
